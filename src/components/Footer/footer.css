@@ -1,0 +1,31 @@
+.footer {
+    width: 100%;
+    padding: 75px 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6278F7;
+    background-image: url("../../assets/images/fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-family: 'Montserrat';
+}
+
+.social-icons {
+    list-style-type: none;
+    display: flex;
+    gap: 35px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer p {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 24px;
+}

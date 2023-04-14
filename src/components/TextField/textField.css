@@ -1,0 +1,30 @@
+.text-field {
+    margin-top: 24px;
+}
+
+.text-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.text-field input {
+    width: 100%;
+    padding: 24px;
+    background-color: #FFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    font-size: 24px;
+    border: none;
+}
+
+.text-field input::placeholder {
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
