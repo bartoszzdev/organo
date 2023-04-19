@@ -1,11 +1,11 @@
 import "./team.css";
 import CardColaborador from "../CardColaborador";
 
-const Team = ({ team, colaboradores }) => {
+const Team = ({ team, colaboradores, deleteColaborador }) => {
     const { name, primaryColor, secondaryColor } = team;
 
         return (
-            colaboradores.length > 0 ? (
+            colaboradores.length > 0 && (
                 <section style={{ backgroundColor: secondaryColor }} className="team">
                     <h3>{name}</h3>
                     <span style={{ backgroundColor: primaryColor }}></span>
@@ -17,12 +17,13 @@ const Team = ({ team, colaboradores }) => {
                                     key={colaborador.nome} 
                                     primaryColor={primaryColor} 
                                     colaborador={colaborador} 
+                                    deleteColaborador={deleteColaborador}
                                 />
                             )
                         })}
                     </div>
                 </section>
-            ) : null
+            )
         )
 }
 

@@ -1,11 +1,14 @@
 import "./cardColaborador.css";
+import { XCircle } from "@phosphor-icons/react";
 
-const CardColaborador = ({ primaryColor, colaborador }) => {
+const CardColaborador = ({ primaryColor, colaborador, deleteColaborador }) => {
     const { nome, cargo, imagem } = colaborador
 
     return (
         <div className="card">
             <div style={{ backgroundColor: primaryColor }} className="header-box">
+                <XCircle size={24} color="#fafafa" weight="fill" className="deletar" onClick={deleteColaborador} />
+
                 <img src={imagem} alt="Imagem do colaborador." />
             </div>
 

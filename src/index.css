@@ -5,3 +5,32 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* SECTION TEAMS */
+.teams {
+  display: flex;
+  flex-direction: column;
+}
+
+.teams-header {
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.teams-header h1 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'Prata';
+  font-style: normal;
+  line-height: 72px;
+  color: #6278F7;
+}
+
+.teams-header span {
+  width: 64px;
+  height: 4px;
+  background-color: #6278F7;
+}

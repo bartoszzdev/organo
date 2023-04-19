@@ -56,18 +56,32 @@ const App = () => {
     })
   }
 
+  const deleteColaborador = () => {
+    console.log("Deletandoooo")
+  }
+
   return (
     <div className="App">
       <Banner />
       <Form newColaborador={addNewColaborador} teams={teams.map(team => team.name)} />
 
-      {teams.map(team => {
-        return <Team 
-          key={team.name} 
-          team={team} 
-          colaboradores={colaboradores.filter(colaborador => colaborador.time === team.name)}
-        />
-      })}
+      {colaboradores.length > 0 && ( 
+        <section className="teams">
+          <div className="teams-header">
+            <h1>Minha Organização:</h1>
+            <span></span>
+          </div>
+
+          {teams.map(team => {
+            return <Team 
+              key={team.name} 
+              team={team} 
+              colaboradores={colaboradores.filter(colaborador => colaborador.time === team.name)}
+              deleteColaborador={deleteColaborador}
+            />
+          })}
+        </section>
+      )}
 
       <Footer />
     </div>
