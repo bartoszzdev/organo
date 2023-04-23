@@ -1,21 +1,18 @@
-import { useState } from 'react';
-import './textField.css';
+import './inputField.css';
 
-const TextField = ({ value, setValue, label, placeholder, required }) => {
-    //const [value, setValue] = useState("")
-
+const InputField = ({ type, value, setValue, label, placeholder, required }) => {
     const handleValue = (e) => {
         setValue(e.target.value)
-        //console.log(label + ": " + value)
     }
 
     return (
-        <div className="text-field">
+        <div className={`field field-${type}`}>
             <label htmlFor="">
-                {label}
+                { label }
             </label>
+            
             <input 
-                type="text" 
+                type={type} 
                 placeholder={placeholder} 
                 required={required}
                 value={value} 
@@ -25,4 +22,4 @@ const TextField = ({ value, setValue, label, placeholder, required }) => {
     )
 };
 
-export default TextField;
+export default InputField;

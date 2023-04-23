@@ -1,8 +1,8 @@
-.text-field {
+.field {
     margin-top: 24px;
 }
 
-.text-field label {
+.field label {
     display: block;
     margin-bottom: 8px;
     font-size: 18px;
@@ -12,7 +12,7 @@
     line-height: 22px;
 }
 
-.text-field input {
+.field input {
     width: 100%;
     padding: 24px;
     background-color: #FFF;
@@ -21,10 +21,16 @@
     border: none;
 }
 
-.text-field input::placeholder {
+.field input::placeholder {
     font-size: 16px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     line-height: 20px;
+}
+
+.field-color input {
+    padding: 18px 24px;
+    height: 80px;
+    cursor: pointer;
 }
